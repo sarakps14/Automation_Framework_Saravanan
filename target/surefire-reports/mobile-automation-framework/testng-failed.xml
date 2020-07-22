@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [mobile-automation-framework]">
+  <parameter name="os" value="android"/>
+  <test name="automation-tests">
+    <classes>
+      <class name="cucumberIntegrationTests.CucumberRunnerUtil"/>
+    </classes>
+  </test> <!-- automation-tests -->
+  <test name="automation-tests(failed)">
+    <classes>
+      <class name="cucumberIntegrationTests.CucumberRunnerUtil">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="driverObjectCreation"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+          <include name="setCreateSession"/>
+        </methods>
+      </class> <!-- cucumberIntegrationTests.CucumberRunnerUtil -->
+    </classes>
+  </test> <!-- automation-tests(failed) -->
+</suite> <!-- Failed suite [mobile-automation-framework] -->

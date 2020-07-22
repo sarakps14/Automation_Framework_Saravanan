@@ -1,0 +1,215 @@
+21 Jul 2020 19:00:46  INFO logger - --------------------------------------
+21 Jul 2020 19:01:00  INFO logger - Android driver created
+21 Jul 2020 19:01:18  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+21 Jul 2020 19:01:18  INFO logger - MethodName :findElement
+21 Jul 2020 19:01:18  INFO logger - Exception :Element not foundBy.xpath: //android.widget.RelativeLayout//android.widget.EditText
+21 Jul 2020 19:01:18  INFO logger - -----------------------------------------------------------------------------------
+21 Jul 2020 19:07:46  INFO logger - --------------------------------------
+21 Jul 2020 19:08:24  INFO logger - --------------------------------------
+21 Jul 2020 19:12:40  INFO logger - --------------------------------------
+21 Jul 2020 19:14:15  INFO logger - --------------------------------------
+21 Jul 2020 19:14:56  INFO logger - --------------------------------------
+21 Jul 2020 19:15:06  INFO logger - Android driver created
+21 Jul 2020 19:15:16  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+21 Jul 2020 19:15:16  INFO logger - MethodName :findElement
+21 Jul 2020 19:15:16  INFO logger - Exception :Element not foundBy.xpath: //android.widget.RelativeLayout//android.widget.EditText
+21 Jul 2020 19:15:16  INFO logger - -----------------------------------------------------------------------------------
+21 Jul 2020 19:19:10  INFO logger - --------------------------------------
+21 Jul 2020 19:20:06  INFO logger - --------------------------------------
+21 Jul 2020 19:22:45  INFO logger - --------------------------------------
+21 Jul 2020 19:29:01  INFO logger - --------------------------------------
+22 Jul 2020 06:16:29  INFO logger - --------------------------------------
+22 Jul 2020 06:16:32  INFO logger - --------------------------------------
+22 Jul 2020 06:17:41  INFO logger - --------------------------------------
+22 Jul 2020 06:17:44  INFO logger - --------------------------------------
+22 Jul 2020 06:23:19  INFO logger - --------------------------------------
+22 Jul 2020 06:23:45  INFO logger - --------------------------------------
+22 Jul 2020 06:24:59  INFO logger - --------------------------------------
+22 Jul 2020 06:25:38  INFO logger - --------------------------------------
+22 Jul 2020 06:29:21  INFO logger - --------------------------------------
+22 Jul 2020 06:32:14  INFO logger - --------------------------------------
+22 Jul 2020 06:33:07  INFO logger - --------------------------------------
+22 Jul 2020 06:33:17  INFO logger - Android driver created
+22 Jul 2020 06:33:41  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 06:33:41  INFO logger - MethodName :findElement
+22 Jul 2020 06:33:41  INFO logger - Exception :Element not foundBy.xpath: //android.widget.RelativeLayout//android.widget.EditText
+22 Jul 2020 06:33:41  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 06:34:38  INFO logger - --------------------------------------
+22 Jul 2020 06:36:32  INFO logger - --------------------------------------
+22 Jul 2020 06:37:54  INFO logger - --------------------------------------
+22 Jul 2020 06:38:55  INFO logger - --------------------------------------
+22 Jul 2020 06:41:37  INFO logger - --------------------------------------
+22 Jul 2020 06:44:08  INFO logger - --------------------------------------
+22 Jul 2020 06:46:30  INFO logger - --------------------------------------
+22 Jul 2020 06:50:44  INFO logger - --------------------------------------
+22 Jul 2020 06:52:47  INFO logger - --------------------------------------
+22 Jul 2020 06:56:50  INFO logger - --------------------------------------
+22 Jul 2020 06:57:00  INFO logger - Android driver created
+22 Jul 2020 06:59:59  INFO logger - --------------------------------------
+22 Jul 2020 07:01:13  INFO logger - --------------------------------------
+22 Jul 2020 07:01:40  INFO logger - --------------------------------------
+22 Jul 2020 07:03:44  INFO logger - --------------------------------------
+22 Jul 2020 07:03:54  INFO logger - Android driver created
+22 Jul 2020 07:23:15  INFO logger - --------------------------------------
+22 Jul 2020 07:23:27  INFO logger - Android driver created
+22 Jul 2020 07:23:29  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 07:23:29  INFO logger - MethodName :findElement
+22 Jul 2020 07:23:29  INFO logger - Exception :Element not foundBy.xpath: //android.widget.RelativeLayout//android.widget.Button
+22 Jul 2020 07:23:29  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 07:24:41  INFO logger - --------------------------------------
+22 Jul 2020 07:24:55  INFO logger - Android driver created
+22 Jul 2020 07:26:54  INFO logger - --------------------------------------
+22 Jul 2020 07:27:06  INFO logger - Android driver created
+22 Jul 2020 07:27:33  INFO logger - --------------------------------------
+22 Jul 2020 07:27:44  INFO logger - Android driver created
+22 Jul 2020 07:29:35  INFO logger - --------------------------------------
+22 Jul 2020 07:29:47  INFO logger - Android driver created
+22 Jul 2020 07:29:48  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 07:29:48  INFO logger - MethodName :findElement
+22 Jul 2020 07:29:48  INFO logger - Exception :Element not foundBy.className: android.widget.ImageView[1]
+22 Jul 2020 07:29:48  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 07:31:02  INFO logger - --------------------------------------
+22 Jul 2020 07:31:14  INFO logger - Android driver created
+22 Jul 2020 07:33:11  INFO logger - --------------------------------------
+22 Jul 2020 07:33:23  INFO logger - Android driver created
+22 Jul 2020 07:34:35  INFO logger - --------------------------------------
+22 Jul 2020 07:34:47  INFO logger - Android driver created
+22 Jul 2020 07:44:21  INFO logger - --------------------------------------
+22 Jul 2020 07:44:32  INFO logger - Android driver created
+22 Jul 2020 07:53:09  INFO logger - --------------------------------------
+22 Jul 2020 07:53:21  INFO logger - Android driver created
+22 Jul 2020 07:55:14  INFO logger - --------------------------------------
+22 Jul 2020 07:55:27  INFO logger - Android driver created
+22 Jul 2020 07:55:30  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 07:55:30  INFO logger - MethodName :findElement
+22 Jul 2020 07:55:30  INFO logger - Exception :Element not foundBy.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.ViewAnimator/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridLayout/android.widget.ImageView[1]
+
+22 Jul 2020 07:55:30  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 07:55:42  INFO logger - --------------------------------------
+22 Jul 2020 07:55:54  INFO logger - Android driver created
+22 Jul 2020 07:57:12  INFO logger - --------------------------------------
+22 Jul 2020 07:57:24  INFO logger - Android driver created
+22 Jul 2020 07:58:12  INFO logger - --------------------------------------
+22 Jul 2020 07:58:23  INFO logger - Android driver created
+22 Jul 2020 08:03:06  INFO logger - --------------------------------------
+22 Jul 2020 08:03:17  INFO logger - Android driver created
+22 Jul 2020 08:07:27  INFO logger - --------------------------------------
+22 Jul 2020 08:07:39  INFO logger - Android driver created
+22 Jul 2020 08:17:40  INFO logger - --------------------------------------
+22 Jul 2020 08:17:51  INFO logger - Android driver created
+22 Jul 2020 08:18:04  INFO logger - Long press successful on element: [[io.appium.java_client.android.AndroidDriver, Capabilities: {app=C:\Users\saravanan.kandan\Downloads\MobileAutomationFramework-master\src\main\java\app\SSapp.apk, appActivity=com.amazon.mShop.home.HomeActivity, appPackage=in.amazon.mShop.android.shopping, automationName=UiAutomator2, databaseEnabled=false, desired={platformName=android, name=userHasSlideshareApp, app=C:\Users\saravanan.kandan\Downloads\MobileAutomationFramework-master\src\main\java\app\SSapp.apk, appActivity=com.amazon.mShop.home.HomeActivity, appPackage=in.amazon.mShop.android.shopping, automationName=UiAutomator2, deviceName=Android Emulator, noReset=false}, deviceApiLevel=29, deviceManufacturer=OnePlus, deviceModel=GM1901, deviceName=1f68912d, deviceScreenDensity=420, deviceScreenSize=1080x2340, deviceUDID=1f68912d, javascriptEnabled=true, locationContextEnabled=false, name=userHasSlideshareApp, networkConnectionEnabled=true, noReset=false, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=10, statBarHeight=80, takesScreenshot=true, viewportRect={left=0, top=80, width=1080, height=2054}, warnings={}, webStorageEnabled=false}] -> id: in.amazon.mShop.android.shopping:id/rs_search_src_text]
+22 Jul 2020 08:20:49  INFO logger - --------------------------------------
+22 Jul 2020 08:21:00  INFO logger - Android driver created
+22 Jul 2020 08:25:30  INFO logger - --------------------------------------
+22 Jul 2020 08:25:41  INFO logger - Android driver created
+22 Jul 2020 08:41:58  INFO logger - --------------------------------------
+22 Jul 2020 08:42:09  INFO logger - Android driver created
+22 Jul 2020 08:43:02  INFO logger - --------------------------------------
+22 Jul 2020 08:43:14  INFO logger - Android driver created
+22 Jul 2020 08:46:32  INFO logger - --------------------------------------
+22 Jul 2020 08:46:43  INFO logger - Android driver created
+22 Jul 2020 08:48:09  INFO logger - --------------------------------------
+22 Jul 2020 08:48:21  INFO logger - Android driver created
+22 Jul 2020 08:53:35  INFO logger - --------------------------------------
+22 Jul 2020 08:53:47  INFO logger - Android driver created
+22 Jul 2020 08:56:30  INFO logger - --------------------------------------
+22 Jul 2020 08:56:42  INFO logger - Android driver created
+22 Jul 2020 09:07:02  INFO logger - --------------------------------------
+22 Jul 2020 09:07:14  INFO logger - Android driver created
+22 Jul 2020 09:07:45  INFO logger - --------------------------------------
+22 Jul 2020 09:07:57  INFO logger - Android driver created
+22 Jul 2020 09:09:35  INFO logger - --------------------------------------
+22 Jul 2020 09:09:47  INFO logger - Android driver created
+22 Jul 2020 09:12:23  INFO logger - --------------------------------------
+22 Jul 2020 09:12:35  INFO logger - Android driver created
+22 Jul 2020 09:13:07  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 09:13:07  INFO logger - MethodName :findElement
+22 Jul 2020 09:13:07  INFO logger - Exception :Element not foundBy.xpath: //android.view.View[@content-desc="Samsung 163 cm (65 Inches) Wondertainment Series Ultra HD LED Smart TV UA65TUE60AKXXL... 3.7 out of 5 stars 10 ₹89,999M.R.P.: ₹1,29,900Save ₹39,901 (31%) Currently not deliverable"]/android.view.View[1]
+22 Jul 2020 09:13:07  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 09:15:07  INFO logger - --------------------------------------
+22 Jul 2020 09:15:20  INFO logger - Android driver created
+22 Jul 2020 09:15:52  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 09:15:52  INFO logger - MethodName :findElement
+22 Jul 2020 09:15:52  INFO logger - Exception :Element not foundBy.xpath: //android.view.View[@content-desc="Samsung 163 cm (65 Inches) Wondertainment Series Ultra HD LED Smart TV UA65TUE60AKXXL (Titan Gray) (2020 model)"])[2]/android.view.View[2]/android.widget.Image
+22 Jul 2020 09:15:52  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 09:23:40  INFO logger - --------------------------------------
+22 Jul 2020 09:23:52  INFO logger - Android driver created
+22 Jul 2020 09:24:42  INFO logger - --------------------------------------
+22 Jul 2020 09:24:54  INFO logger - Android driver created
+22 Jul 2020 09:25:48  INFO logger - --------------------------------------
+22 Jul 2020 09:26:00  INFO logger - Android driver created
+22 Jul 2020 09:26:32  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 09:26:32  INFO logger - MethodName :findElement
+22 Jul 2020 09:26:32  INFO logger - Exception :Element not foundBy.xpath: //android.view.View[@content-desc="Samsung 163 cm (65 Inches) Wondertainment Series Ultra HD LED Smart TV UA65TUE60AKXXL (Titan Gray) (2020 model)"])[2]/android.view.View[2]/android.widget.Image
+22 Jul 2020 09:26:32  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 09:31:02  INFO logger - --------------------------------------
+22 Jul 2020 09:31:14  INFO logger - Android driver created
+22 Jul 2020 09:31:46  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 09:31:46  INFO logger - MethodName :findElement
+22 Jul 2020 09:31:46  INFO logger - Exception :Element not foundBy.xpath: //android.view.View[@content-desc="Samsung 163 cm (65 Inches) Wondertainment Series Ultra HD LED Smart TV UA65TUE60AKXXL... 3.7 out of 5 stars 10 ₹89,999M.R.P.: ₹1,29,900Save ₹39,901 (31%) Currently not deliverable"]/android.view.View[1]
+22 Jul 2020 09:31:46  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 09:40:23  INFO logger - --------------------------------------
+22 Jul 2020 09:40:35  INFO logger - Android driver created
+22 Jul 2020 09:44:28  INFO logger - --------------------------------------
+22 Jul 2020 09:44:41  INFO logger - Android driver created
+22 Jul 2020 09:47:40  INFO logger - --------------------------------------
+22 Jul 2020 09:47:54  INFO logger - Android driver created
+22 Jul 2020 09:54:06  INFO logger - --------------------------------------
+22 Jul 2020 09:54:18  INFO logger - Android driver created
+22 Jul 2020 09:55:06  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 09:55:06  INFO logger - MethodName :findElement
+22 Jul 2020 09:55:06  INFO logger - Exception :Element not foundBy.id: in.amazon.mShop.android.shopping
+22 Jul 2020 09:55:06  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 09:56:10  INFO logger - --------------------------------------
+22 Jul 2020 09:56:22  INFO logger - Android driver created
+22 Jul 2020 10:26:50  INFO logger - --------------------------------------
+22 Jul 2020 10:27:02  INFO logger - Android driver created
+22 Jul 2020 10:30:06  INFO logger - --------------------------------------
+22 Jul 2020 10:30:19  INFO logger - Android driver created
+22 Jul 2020 10:31:35  INFO logger - --------------------------------------
+22 Jul 2020 10:31:48  INFO logger - Android driver created
+22 Jul 2020 10:32:28  INFO logger - --------------------------------------
+22 Jul 2020 10:32:41  INFO logger - Android driver created
+22 Jul 2020 10:33:44  INFO logger - --------------------------------------
+22 Jul 2020 10:33:57  INFO logger - Android driver created
+22 Jul 2020 10:34:08  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 10:34:08  INFO logger - MethodName :findElement
+22 Jul 2020 10:34:08  INFO logger - Exception :Element not foundBy.id: signInSubmit
+22 Jul 2020 10:34:08  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 10:35:40  INFO logger - --------------------------------------
+22 Jul 2020 10:35:52  INFO logger - Android driver created
+22 Jul 2020 10:38:45  INFO logger - --------------------------------------
+22 Jul 2020 10:38:57  INFO logger - Android driver created
+22 Jul 2020 10:39:50  INFO logger - --------------------------------------
+22 Jul 2020 10:40:02  INFO logger - Android driver created
+22 Jul 2020 10:40:14  INFO logger - ClassName :cucumberIntegrationTests.screens.android.AndroidLoginScreen
+22 Jul 2020 10:40:14  INFO logger - MethodName :findElement
+22 Jul 2020 10:40:14  INFO logger - Exception :Element not foundBy.id: in.amazon.mShop.android.shopping:id/skip_sign_in_button
+22 Jul 2020 10:40:14  INFO logger - -----------------------------------------------------------------------------------
+22 Jul 2020 10:41:14  INFO logger - --------------------------------------
+22 Jul 2020 10:41:27  INFO logger - Android driver created
+22 Jul 2020 10:42:23  INFO logger - --------------------------------------
+22 Jul 2020 10:42:36  INFO logger - Android driver created
+22 Jul 2020 10:58:18  INFO logger - --------------------------------------
+22 Jul 2020 10:58:30  INFO logger - Android driver created
+22 Jul 2020 11:00:37  INFO logger - --------------------------------------
+22 Jul 2020 11:00:52  INFO logger - Android driver created
+22 Jul 2020 11:02:31  INFO logger - --------------------------------------
+22 Jul 2020 11:02:45  INFO logger - Android driver created
+22 Jul 2020 11:12:35  INFO logger - --------------------------------------
+22 Jul 2020 11:12:49  INFO logger - Android driver created
+22 Jul 2020 11:14:39  INFO logger - --------------------------------------
+22 Jul 2020 11:14:54  INFO logger - Android driver created
+22 Jul 2020 11:18:04  INFO logger - --------------------------------------
+22 Jul 2020 11:18:19  INFO logger - Android driver created
+22 Jul 2020 11:21:37  INFO logger - --------------------------------------
+22 Jul 2020 11:21:51  INFO logger - Android driver created
+22 Jul 2020 11:22:41  INFO logger - --------------------------------------
+22 Jul 2020 11:22:56  INFO logger - Android driver created
+22 Jul 2020 11:47:00  INFO logger - --------------------------------------
+22 Jul 2020 11:51:05  INFO logger - --------------------------------------
+22 Jul 2020 11:51:20  INFO logger - Android driver created
+22 Jul 2020 11:52:28  INFO logger - --------------------------------------
+22 Jul 2020 11:52:44  INFO logger - Android driver created
+22 Jul 2020 11:53:12  INFO logger - --------------------------------------
+22 Jul 2020 11:53:27  INFO logger - Android driver created

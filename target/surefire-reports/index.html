@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-mobile-automation-framework">
+              <span class="suite-name border-failed">mobile-automation-framework</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-mobile-automation-framework">
+                    <span>C:\Users\saravanan.kandan\Downloads\MobileAutomationFramework-master\cucumberTestng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-mobile-automation-framework">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-mobile-automation-framework">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-mobile-automation-framework">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-mobile-automation-framework">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-mobile-automation-framework">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-mobile-automation-framework">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-mobile-automation-framework" class="hide-methods failed suite-mobile-automation-framework"> (hide)</a> <!-- hide-methods failed suite-mobile-automation-framework -->
+                      <a href="#" panel-name="suite-mobile-automation-framework" class="show-methods failed suite-mobile-automation-framework"> (show)</a> <!-- show-methods failed suite-mobile-automation-framework -->
+                    </span>
+                    <div class="method-list-content failed suite-mobile-automation-framework">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-mobile-automation-framework" title="cucumberIntegrationTests.CucumberRunnerUtil" hash-for-method="feature(Verify login functionality and select product in the Amazon app)">feature(Verify login functionality and select product in the Amazon app)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-mobile-automation-framework -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-mobile-automation-framework" class="panel mobile-automation-framework">
+          <div class="suite-mobile-automation-framework-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">cucumberIntegrationTests.CucumberRunnerUtil</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Verify login functionality and select product in the Amazon app)">
+                  </a> <!-- feature(Verify login functionality and select product in the Amazon app) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Verify login functionality and select product in the Amazon app)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command.
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;1JH4XS2&apos;, ip: &apos;192.168.43.49&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, deviceName: Android Emulator, name: userHasAmazonApp, noReset: false, platformName: android}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: 1f68912d, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: 1f68912d, javascriptEnabled: true, locationContextEnabled: false, name: userHasAmazonApp, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 7b3c7369-1078-43bd-9953-1cd41a88acc2
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumberIntegrationTests.CucumberRunnerUtil.feature(CucumberRunnerUtil.java:49)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command.
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;1JH4XS2&apos;, ip: &apos;192.168.43.49&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, deviceName: Android Emulator, name: userHasAmazonApp, noReset: false, platformName: android}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: 1f68912d, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: 1f68912d, javascriptEnabled: true, locationContextEnabled: false, name: userHasAmazonApp, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 7b3c7369-1078-43bd-9953-1cd41a88acc2
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+	at UITestFramework.GenericMethods.scrollDown(GenericMethods.java:385)
+	at cucumberIntegrationTests.stepDefinitions.common.LoginSteps.userShouldBeAbleToScroll(LoginSteps.java:110)
+	at ✽.And user should be able to scroll and select the product in the search list(LoginTest.feature:14)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-mobile-automation-framework-class-failed -->
+        </div> <!-- panel mobile-automation-framework -->
+        <div panel-name="test-xml-mobile-automation-framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\saravanan.kandan\Downloads\MobileAutomationFramework-master\cucumberTestng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;mobile-automation-framework&quot;&gt;
+  &lt;parameter name=&quot;os&quot; value=&quot;android&quot;/&gt;
+  &lt;test name=&quot;automation-tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;cucumberIntegrationTests.CucumberRunnerUtil&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- automation-tests --&gt;
+&lt;/suite&gt; &lt;!-- mobile-automation-framework --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-mobile-automation-framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for mobile-automation-framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">automation-tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-mobile-automation-framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for mobile-automation-framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">feature</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-mobile-automation-framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for mobile-automation-framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_mobile-automation-framework');
+function tableData_mobile-automation-framework() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'feature')
+data.setCell(0, 2, 'cucumberIntegrationTests.CucumberRunnerUtil')
+data.setCell(0, 3, 63295);
+window.suiteTableData['mobile-automation-framework']= { tableData: data, tableDiv: 'times-div-mobile-automation-framework'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-mobile-automation-framework">
+              </div> <!-- times-div-mobile-automation-framework -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-mobile-automation-framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for mobile-automation-framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-mobile-automation-framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-mobile-automation-framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">cucumberIntegrationTests.CucumberRunnerUtil</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setCreateSession</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">driverObjectCreation(android, public void cucumberIntegrationTests.CucumberRunnerUtil.feature(cucumber.api.testng.Cucumbe...)</span>
+                <span class="method-start">332 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(Verify login functionality and select product in the Amazon app)</span>
+                <span class="method-start">333 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">63636 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">cleanUp</span>
+                <span class="method-start">63664 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
