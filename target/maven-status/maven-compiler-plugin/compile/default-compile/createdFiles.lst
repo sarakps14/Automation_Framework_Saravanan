@@ -12,9 +12,10 @@ cucumberIntegrationTests\CucumberRunnerUtil.class
 cucumberIntegrationTests\screens\iOS\IOSLoginScreen.class
 cucumberIntegrationTests\CreateSessionCucumber.class
 IntegrationTests\screens\iOS\IOSLoginScreen.class
+cucumberIntegrationTests\screens\web\WebBudgetScreen.class
 UITestFramework\retryLogic\RetryListener.class
 IntegrationTests\screens\android\AndroidLoginScreen.class
 IntegrationTests\coreLogic\iOS\IOSLoginCoreLogic.class
 UITestFramework\CreateSession.class
 cucumberIntegrationTests\stepDefinitions\common\BaseSteps.class
-UITestFramework\MysqlDatabase.class
+cucumberIntegrationTests\stepDefinitions\common\BudgetSteps.class

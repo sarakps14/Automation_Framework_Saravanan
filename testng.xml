@@ -1,7 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="mobile-automation-framework">
 	<parameter name="os" value="${os}" />
-
+	<listeners>
+		<listener class-name="UITestFramework.retryLogic.RetryListener"/>
+		<listener class-name="UITestFramework.retryLogic.TestListener"/>
+	</listeners>
 	<test name="automation-tests">
 		<packages>
 			<package name="tests.testngTests" />

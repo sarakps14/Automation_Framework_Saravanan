@@ -1,5 +1,6 @@
 package UITestFramework;
 
+import cucumberIntegrationTests.screens.web.WebBudgetScreen;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -11,6 +12,7 @@ import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import logger.Log;
 
@@ -20,6 +22,10 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -87,7 +93,7 @@ public class CreateSession  {
 	 * this method creates the driver depending upon the passed parameter (android or iOS)
 	 *  and loads the properties files (config and test data properties files).
 	 * @param os android or iOS
-	 * @param methodName - name of the method under execution  
+	 * @param methodName - name of the method under execution
 	 * @throws Exception issue while loading properties files or creation of driver.
 	 */
 	@Parameters({"os"})
@@ -99,8 +105,7 @@ public class CreateSession  {
 		File propertiesFile = new File(file.getAbsoluteFile() + "//src//main//java//log4j.properties");
 		PropertyConfigurator.configure(propertiesFile.toString());
 		Log.info("--------------------------------------");
-
-
+		System.out.println("Started Testing : " +os);
 
 		if (os.equalsIgnoreCase("android")){
 			String buildPath = choosebuild(os);
@@ -112,6 +117,10 @@ public class CreateSession  {
 			String buildPath = choosebuild(os);
 			iOSDriver(buildPath, methodName);
 			Log.info("iOS driver created");
+		}
+		else if (os.equalsIgnoreCase("web")){
+			startWebDriverServer("chrome");
+			Log.info("Browser lunched successfully");
 		}
 	}
 
@@ -188,8 +197,7 @@ public class CreateSession  {
 			command.addArgument("--port", false);  
 			command.addArgument("4723");  
 			command.addArgument("--full-reset", false);  
-
-			DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();  
+			DefaultExecuteResultHandler resultHandler = new DefaultExecuteResultHandler();
 			DefaultExecutor executor = new DefaultExecutor();  
 			executor.setExitValue(1);  
 			executor.execute(command, resultHandler);  
@@ -224,6 +232,43 @@ public class CreateSession  {
 			executor.execute(command, resultHandler);
 			Thread.sleep(5000); //Wait for appium server to start	
 
+		}
+		else{
+			Log.info(os + "is not supported yet");
+		}
+	}
+
+	/**
+	 *  this method starts the Selenium server depending on your OS.
+	 * @param os your machine OS (windows/linux/mac)
+	 * @throws IOException Signals that an I/O exception of some sort has occurred
+	 * @throws ExecuteException An exception indicating that the executing a subprocesses failed
+	 * @throws InterruptedException Thrown when a thread is waiting, sleeping,
+	 * or otherwise occupied, and the thread is interrupted, either before
+	 *  or during the activity.
+	 */
+	public void startWebDriverServer(String os) throws ExecuteException, IOException, InterruptedException{
+		if (os.equalsIgnoreCase("Chrome")) {
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "//src//main//java//drivers//chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			options.setExperimentalOption("useAutomationExtension", false);
+			driver = new ChromeDriver(options);
+			driver.manage().window().maximize();
+		}
+		else if (os.equalsIgnoreCase("IE")) {
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+ "//src//main//java//drivers//IEDriverServer.exe");
+			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+			capabilities.setCapability("ignoreZoomSetting", true);
+			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+			capabilities.setCapability("requireWindowFocus", true);
+			driver= new InternetExplorerDriver(capabilities);
+			driver.manage().window().maximize();
+		}
+		else if (os.equalsIgnoreCase("Firefox")) {
+			System.setProperty("webdriver.gecko.driver", "C:\\Drivers\\geckodriver.exe");
+			WebDriver driver = new FirefoxDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		}
 		else{
 			Log.info(os + "is not supported yet");

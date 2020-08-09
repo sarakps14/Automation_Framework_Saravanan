@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="64.874" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="73.285" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
@@ -66,67 +66,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="feature" classname="cucumberIntegrationTests.CucumberRunnerUtil" time="63.667">
-    <failure message="org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command.&#10;Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;&#10;System info: host: &apos;1JH4XS2&apos;, ip: &apos;192.168.43.49&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, deviceName: Android Emulator, name: userHasAmazonApp, noReset: false, platformName: android}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: 1f68912d, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: 1f68912d, javascriptEnabled: true, locationContextEnabled: false, name: userHasAmazonApp, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 7b3c7369-1078-43bd-9953-1cd41a88acc2" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
-org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command.
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: '1JH4XS2', ip: '192.168.43.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, deviceName: Android Emulator, name: userHasAmazonApp, noReset: false, platformName: android}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: 1f68912d, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: 1f68912d, javascriptEnabled: true, locationContextEnabled: false, name: userHasAmazonApp, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 7b3c7369-1078-43bd-9953-1cd41a88acc2
-	at cucumberIntegrationTests.CucumberRunnerUtil.feature(CucumberRunnerUtil.java:49)
-Caused by: org.openqa.selenium.WebDriverException: 
-An unknown server-side error occurred while processing the command.
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: '1JH4XS2', ip: '192.168.43.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, deviceName: Android Emulator, name: userHasAmazonApp, noReset: false, platformName: android}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: 1f68912d, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: 1f68912d, javascriptEnabled: true, locationContextEnabled: false, name: userHasAmazonApp, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 7b3c7369-1078-43bd-9953-1cd41a88acc2
-</failure>
-    <system-out><![CDATA[@login
-Feature: Verify login functionality and select product in the Amazon app
-22 Jul 2020 11:53:12  INFO logger - --------------------------------------
-22 Jul 2020 11:53:27  INFO logger - Android driver created
-
-  Background: Create an instance of android or ios driver before each scenario # LoginTest.feature:5
-    Given User has Amazon "android" app                                        # BaseSteps.userHasAmazonApp(String)
-
-  Scenario: User should be able to login on app and add product in the list     # LoginTest.feature:8
-    Given taps on "language" image                                              # LoginSteps.tapsOnImage(String)
-    And taps on "signin" button                                                 # LoginSteps.tapsOnButton(String)
-    Given user has "valid" username and password                                # LoginSteps.usernameAndPasswordIs(String)
-    When user enters credentials and submit the button                          # LoginSteps.userEntersCredentials()
-    Then Search the "65 inch TV" product in the search textbox                  # LoginSteps.buttonShouldBeVisible(String)
-    And user should be able to scroll and select the product in the search list # LoginSteps.userShouldBeAbleToScroll()
-      org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command.
-      Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-      System info: host: '1JH4XS2', ip: '192.168.43.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-      Driver info: io.appium.java_client.android.AndroidDriver
-      Capabilities {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, deviceName: Android Emulator, name: userHasAmazonApp, noReset: false, platformName: android}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: 1f68912d, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: 1f68912d, javascriptEnabled: true, locationContextEnabled: false, name: userHasAmazonApp, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
-      Session ID: 7b3c7369-1078-43bd-9953-1cd41a88acc2
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-      	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-      	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-      	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-      	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-      	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
-      	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
-      	at UITestFramework.GenericMethods.scrollDown(GenericMethods.java:385)
-      	at cucumberIntegrationTests.stepDefinitions.common.LoginSteps.userShouldBeAbleToScroll(LoginSteps.java:110)
-      	at ?.And user should be able to scroll and select the product in the search list(LoginTest.feature:14)
-
-    And user click the buy button                                               # LoginSteps.clickBuyButton()
-]]></system-out>
-    <system-err><![CDATA[Jul 22, 2020 11:53:27 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
+  <testcase name="feature" classname="cucumberIntegrationTests.CucumberRunnerUtil" time="72.311"/>
 </testsuite>

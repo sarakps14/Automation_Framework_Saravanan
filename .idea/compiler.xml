@@ -7,10 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mobile-automation-framework-for-amazon" />
+        <module name="AutomationTestingFramework" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AutomationTestingFramework" target="1.8" />
       <module name="mobile-automation-framework-for-amazon" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -10,6 +10,10 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -23,7 +27,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Optional;
 import java.util.Properties;
-
+import java.util.concurrent.TimeUnit;
 
 /**
  * contains all the methods to create a new session and destroy the 
@@ -113,18 +117,57 @@ public class CreateSessionCucumber {
 			iOSDriver(buildPath, methodName);
 			Log.info("iOS driver created");
 		}
+		else if (os.equalsIgnoreCase("web")){
+			startWebDriverServer(localeConfigProp.getProperty("Browser"));
+			Log.info("Browser lunched successfully");
+		}
 	}
 
 	/** 
 	 * this method quit the driver after the execution of test(s) 
 	 */
-	//@AfterMethod
+	@AfterMethod
 	public void teardown(){
 		Log.info("Shutting down driver");
 		driver.quit();
 	}
 
-
+	/**
+	 *  this method starts the Selenium server depending on your OS.
+	 * @param os your machine OS (windows/linux/mac)
+	 * @throws IOException Signals that an I/O exception of some sort has occurred
+	 * @throws ExecuteException An exception indicating that the executing a subprocesses failed
+	 * @throws InterruptedException Thrown when a thread is waiting, sleeping,
+	 * or otherwise occupied, and the thread is interrupted, either before
+	 *  or during the activity.
+	 */
+	public void startWebDriverServer(String os) throws ExecuteException, IOException, InterruptedException{
+		if (os.equalsIgnoreCase("Chrome")) {
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "//src//main//java//drivers//chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			options.setExperimentalOption("useAutomationExtension", false);
+			driver = new ChromeDriver(options);
+			driver.manage().window().maximize();
+		}
+		else if (os.equalsIgnoreCase("IE")) {
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+ "//src//main//java//drivers//IEDriverServer.exe");
+			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+			capabilities.setCapability("ignoreZoomSetting", true);
+			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+			capabilities.setCapability("requireWindowFocus", true);
+			driver= new InternetExplorerDriver(capabilities);
+			driver.manage().window().maximize();
+		}
+		else if (os.equalsIgnoreCase("Firefox")) {
+			System.setProperty("webdriver.gecko.driver", "C:\\Drivers\\geckodriver.exe");
+			WebDriver driver = new FirefoxDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+		}
+		else{
+			Log.info(os + "is not supported yet");
+		}
+	}
 
 	/** 
 	 *  this method creates the android driver
@@ -275,7 +318,7 @@ public class CreateSessionCucumber {
 
 		if (f.exists() && !f.isDirectory()) {
 			lobConfigFis = new FileInputStream(file.getAbsoluteFile()
-					+ "/src//main//java//config//" + platform + "_config.properties");
+					+ "//src//main//java//config//" + platform + "_config.properties");
 			lobConfigProp.load(lobConfigFis);
 
 			String locale = lobConfigProp.getProperty("LOCALE");

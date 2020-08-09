@@ -1,5 +1,6 @@
 package UITestFramework;
 
+import cucumber.api.Scenario;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileDriver;
 import io.appium.java_client.TouchAction;
@@ -12,14 +13,16 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 import logger.Log;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import java.io.File;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class GenericMethods {
 
@@ -27,6 +30,7 @@ public class GenericMethods {
 
     // common timeout for all tests can be set here
     public final int timeOut = 40;
+
 
     public GenericMethods(WebDriver driver) {
         this.driver = driver;
@@ -406,6 +410,75 @@ public class GenericMethods {
                     .waitAction(WaitOptions.waitOptions(Duration.ofMillis(durationForSwipe)))
                     .release().perform();
         }
+    }
+    /**
+     * method to Calculate date aas per input
+     *
+     * @param dateIncrement  number of days need to increase
+     */
+    public String DateCalculator(int dateIncrement) throws Exception {
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+        Calendar c = Calendar.getInstance();
+        c.setTime(new Date()); // Now use today date.
+        c.add(Calendar.DATE, dateIncrement);
+        String output = sdf.format(c.getTime());
+        System.out.println("Date Output :" +output);
+        return output;
+    }
+    /**
+     * method to take screenshot
+     *
+     * @param imageFileName image file name for screenshot
+     */
+    public void TakenScreenshot(String imageFileName) throws Exception
+    {
+        try {
+            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir")+ "\\screenshot\\"+imageFileName+".jpg"));
+        }
+
+        catch(Exception e)
+        {
+            System.out.println("Error in take ScreenShot");
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * method to draw locator and waiting for the element
+     *
+     * @param locator element to be draw locator
+     */
+    public By drawMethod(By locator)
+    {
+        WebElement elem = null;
+
+        try{
+            (new WebDriverWait(driver,10)).until(ExpectedConditions.presenceOfElementLocated(locator));
+            driver.findElements(locator);
+            Actions actions = new Actions(driver);
+            WebElement mainMenu = driver.findElement(locator);
+            actions.moveToElement(mainMenu);
+        }
+        catch(NoSuchElementException e)
+        {
+            System.out.println("Element not fount");
+            e.printStackTrace();
+        }
+        try
+        {
+            elem = driver.findElement(locator);
+
+            if (driver instanceof JavascriptExecutor) {
+                ((JavascriptExecutor)driver).executeScript("arguments[0].style.border='4px solid yellow'", elem);
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println("Unable to draw a border around the found element");
+        }
+
+        return locator;
     }
 
 

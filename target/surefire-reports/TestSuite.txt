@@ -1,21 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 64.874 sec <<< FAILURE! - in TestSuite
-feature(cucumberIntegrationTests.CucumberRunnerUtil)  Time elapsed: 63.667 sec  <<< FAILURE!
-cucumber.runtime.CucumberException: 
-org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command.
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: '1JH4XS2', ip: '192.168.43.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, deviceName: Android Emulator, name: userHasAmazonApp, noReset: false, platformName: android}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: 1f68912d, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: 1f68912d, javascriptEnabled: true, locationContextEnabled: false, name: userHasAmazonApp, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 7b3c7369-1078-43bd-9953-1cd41a88acc2
-	at cucumberIntegrationTests.CucumberRunnerUtil.feature(CucumberRunnerUtil.java:49)
-Caused by: org.openqa.selenium.WebDriverException: 
-An unknown server-side error occurred while processing the command.
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: '1JH4XS2', ip: '192.168.43.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:\Users\saravanan.kandan\D..., appActivity: com.amazon.mShop.home.HomeA..., appPackage: in.amazon.mShop.android.sho..., automationName: UiAutomator2, deviceName: Android Emulator, name: userHasAmazonApp, noReset: false, platformName: android}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: GM1901, deviceName: 1f68912d, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: 1f68912d, javascriptEnabled: true, locationContextEnabled: false, name: userHasAmazonApp, networkConnectionEnabled: true, noReset: false, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, takesScreenshot: true, viewportRect: {height: 2054, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 7b3c7369-1078-43bd-9953-1cd41a88acc2
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 73.285 sec - in TestSuite

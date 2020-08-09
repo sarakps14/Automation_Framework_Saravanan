@@ -15,7 +15,9 @@ import java.lang.reflect.Method;
         monochrome = true,
         features = "src/test/java/tests/cucumberTests/features",
         glue = {"cucumberIntegrationTests/stepDefinitions"},
-        plugin = {"pretty", "html:target/cucumber"}
+       // tags = {"@Mobile_App_Testing","@SmokeTest"},
+        tags = {"@Buget_1","@SmokeTest"},
+        plugin = {"pretty", "html:target/cucumber-html-report","json:target/cucumber.json"}
 
 )
 public class CucumberRunnerUtil {

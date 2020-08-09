@@ -25,7 +25,8 @@ public class AndroidLoginScreen extends GenericMethods {
 	public By pinCodeButton = By.id("in.amazon.mShop.android.shopping");
 	public By pinCodeTextBox = By.id("in.amazon.mShop.android.shopping");
 	public By pinCodeApplyButton = By.id("in.amazon.mShop.android.shopping");
-	public By buyButton = By.id("a-autoid-1");
+	public By buyButton = By.id("a-autoid-14");
+	public By addToCardButton = By.id("add-to-cart-button");
 	//public By emailIdTextBox = By.id("ap_email_login");
 	public By emailIdTextBox = By.xpath("//android.widget.EditText[@index='1']");
 	public By continueButton = By.className("android.widget.Button");

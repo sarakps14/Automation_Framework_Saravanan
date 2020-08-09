@@ -1,6 +1,5 @@
 package IntegrationTests.screens.iOS;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import UITestFramework.GenericMethods;

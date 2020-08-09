@@ -7,18 +7,4 @@
       <class name="cucumberIntegrationTests.CucumberRunnerUtil"/>
     </classes>
   </test> <!-- automation-tests -->
-  <test name="automation-tests(failed)">
-    <classes>
-      <class name="cucumberIntegrationTests.CucumberRunnerUtil">
-        <methods>
-          <include name="cleanUp"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="driverObjectCreation"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
-          <include name="setCreateSession"/>
-        </methods>
-      </class> <!-- cucumberIntegrationTests.CucumberRunnerUtil -->
-    </classes>
-  </test> <!-- automation-tests(failed) -->
 </suite> <!-- Failed suite [mobile-automation-framework] -->

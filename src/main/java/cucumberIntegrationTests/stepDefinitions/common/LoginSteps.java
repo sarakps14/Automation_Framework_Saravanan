@@ -9,10 +9,8 @@ import cucumberIntegrationTests.CreateSessionCucumber;
 import cucumberIntegrationTests.screens.android.AndroidLoginScreen;
 import cucumberIntegrationTests.screens.iOS.IOSLoginScreen;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -68,30 +66,17 @@ public class LoginSteps {
         androidLoginScreen.waitForVisibility(androidLoginScreen.signIn);
         androidLoginScreen.findElement(androidLoginScreen.signIn).click();
     }
-    public void tapsOnButtontest(String arg0) throws InterruptedException {
-        androidLoginScreen.waitForVisibility(androidLoginScreen.signIn);
-        androidLoginScreen.findElement(androidLoginScreen.signIn).click();
-        androidLoginScreen.waitForVisibility(androidLoginScreen.emailIdTextBox);
-        androidLoginScreen.findElement(androidLoginScreen.emailIdTextBox).sendKeys("sarakps14@gmail.com");
-        androidLoginScreen.findElement(androidLoginScreen.continueButton).click();
-        androidLoginScreen.waitForVisibility(androidLoginScreen.passwordTextBox);
-        androidLoginScreen.findElement(androidLoginScreen.passwordTextBox).sendKeys("kandan14");
-        Thread.sleep(10000);
-        androidLoginScreen.findElement(androidLoginScreen.submitButton).click();
-        androidLoginScreen.waitForVisibility(androidLoginScreen.searchTextBox);
-        androidLoginScreen.findElement(androidLoginScreen.searchTextBox).sendKeys("65 inch TV"+"\n");
-        // androidLoginScreen.findElement(androidLoginScreen.searchTextBox).sendKeys("\n");
-        Thread.sleep(10000);
-        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BUTTON_START));
-        androidLoginScreen.scrollDown(2, 500);
-        Thread.sleep(5000);
-        androidLoginScreen.findElements(androidLoginScreen.productList).get(0).click();
-        Thread.sleep(5000);
-        androidLoginScreen.scrollDown(6, 500);
-        androidLoginScreen.waitForVisibility(androidLoginScreen.buyButton);
-        Thread.sleep(5000);
-        androidLoginScreen.findElement(androidLoginScreen.buyButton).click();
+    @And("taps on \"([^\"]*)\" skip button")
+    public void tapsOnSkipButton(String arg0) throws InterruptedException {
+        androidLoginScreen.waitForVisibility(androidLoginScreen.skipSignIn);
+        androidLoginScreen.findElement(androidLoginScreen.skipSignIn).click();
     }
+    @And("taps on \"([^\"]*)\" Continue button")
+    public void tapsOnContinueButton(String arg0) throws InterruptedException {
+        androidLoginScreen.waitForVisibility(androidLoginScreen.continueButton);
+        androidLoginScreen.findElement(androidLoginScreen.continueButton).click();
+    }
+
     @Given("taps on \"([^\"]*)\" image")
     public void tapsOnImage(String arg0) {
         androidLoginScreen.waitForVisibility(androidLoginScreen.languageEnglish);
@@ -99,10 +84,13 @@ public class LoginSteps {
     }
 
     @Then("Search the \"([^\"]*)\" product in the search textbox")
-    public void buttonShouldBeVisible(String searchText) {
+    public void buttonShouldBeVisible(String searchText) throws InterruptedException {
         androidLoginScreen.waitForVisibility(androidLoginScreen.searchTextBox);
+        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.SEARCH));
+        Thread.sleep(5000);
         androidLoginScreen.findElement(androidLoginScreen.searchTextBox).sendKeys(searchText+"\n");
-        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BUTTON_START));
+        Thread.sleep(5000);
+        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
     }
 
     @And("user should be able to scroll and select the product in the search list")
@@ -115,6 +103,8 @@ public class LoginSteps {
 
     @And("user click the buy button and validate the response")
     public void clickBuyButton() {
+        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BUTTON_START));
+        androidLoginScreen.scrollDown(2, 1000);
         androidLoginScreen.waitForVisibility(androidLoginScreen.buyButton);
         androidLoginScreen.findElement(androidLoginScreen.buyButton).click();
         androidLoginScreen.waitForVisibility(androidLoginScreen.productList);
